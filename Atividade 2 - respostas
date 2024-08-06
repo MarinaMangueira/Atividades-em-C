@@ -1,0 +1,385 @@
+1° questão:
+#include <stdio.h>
+
+int main() {
+   int numero1, numero2, numero3, numero4, numero5, maior, menor;
+   printf("Informe o primeiro número inteiro: ");
+   scanf("%d", &numero1);
+   
+   printf("Informe o segundo número inteiro: ");
+   scanf("%d", &numero2);
+   
+   printf("Informe o terceiro número inteiro: ");
+   scanf("%d", &numero3);
+   
+   printf("Informe o quarto número inteiro: ");
+   scanf("%d", &numero4);
+   
+   printf("Informe o quinto número inteiro: ");
+   scanf("%d", &numero5);
+   
+   maior = menor = numero1;
+   
+   if(numero2 > maior) maior = numero2;
+   if(numero2 < menor) menor = numero2;
+   
+   if(numero3 > maior) maior = numero3;
+   if(numero3 < menor) menor = numero3;
+   
+   if(numero4 > maior) maior = numero4;
+   if(numero4 < menor) menor = numero4;
+   
+   if(numero5 > maior) maior = numero5;
+   if(numero5 < menor) menor = numero5;
+   
+   printf("O maior número é: %d\n", maior);
+   printf("O menor múmero é: %d\n", menor);
+   
+   return 0;
+}
+
+
+
+2° questão:
+#include <stdio.h>
+
+int main() {
+   int numero;
+   printf("Informe um número inteiro: ");
+   scanf("%d", &numero);
+   
+   if(numero%3 == 0 && numero%7 ==0){
+       printf("O número %d é divisível por 3 e por 7", numero);
+   }
+   else{
+      printf("O número %d não é divisível por 3 e por 7", numero);
+   }
+
+   return 0;
+}
+
+
+
+3° questão:
+#include <stdio.h>
+
+//OBS: Jucelio, eu sei que essa questão dava para utilizar o switch case, e ficaria menor com um código mais "limpo"
+//Todavia, eu não gosto de utilizar o break, por isso fiz sem o mesmo.
+
+int main() {
+   int numero;
+   printf("Informe um número de 1 a 12: ");
+   scanf("%d", &numero);
+   
+   if(numero == 1){
+       printf("O número %d equivale ao mês de janeiro\n", numero);
+   }
+   else if(numero == 2){
+       printf("O número %d equivale ao mês de fevereiro\n", numero);
+   }
+   else if(numero == 3){
+       printf("O número %d equivale ao mês de março\n", numero);
+   }
+   else if(numero == 4){
+       printf("O número %d equivale ao mês de abril\n", numero);
+   } 
+   else if(numero == 5){
+       printf("O número %d equivale ao mês de maio\n", numero);
+   } 
+   else if(numero == 6){
+       printf("O número %d equivale ao mês de junho\n", numero);
+   } 
+   else if(numero == 7){
+       printf("O número %d equivale ao mês de julho\n", numero);
+   } 
+   else if(numero == 8){
+       printf("O número %d equivale ao mês de agosto\n", numero);
+   } 
+   else if(numero == 9){
+       printf("O número %d equivale ao mês de setembro\n", numero);
+   } else if(numero == 10){
+       printf("O número %d equivale ao mês de outubro\n", numero);
+   } 
+   else if(numero == 11){
+       printf("O número %d equivale ao mês de novembro\n", numero);
+   } 
+   else if(numero == 12){
+       printf("O número %d equivale ao mês de dezembro\n", numero);
+   }
+   else{
+       printf("O número %d não equivale a nenhum mês\n", numero);
+   }
+   
+   return 0;
+}
+
+
+
+4° questão:
+#include <stdio.h>
+
+int main() {
+   int numero; 
+   float salario, aumento, novo_salario;
+   printf("1 - Servente\n");
+   printf("2 - Pedreiro\n");
+   printf("3 - Mestre de Obras\n");
+   printf("4 - Técnico de Segurança\n\n");
+   
+   printf("Informe o número correspondente ao seu cargo profissional: ");
+   scanf("%d", &numero);
+   
+   printf("Informe o salário recebido no seu cargo: ");
+   scanf("%f", &salario);
+   
+   if(numero == 1){
+       aumento = salario * 0.40;
+       novo_salario = salario + aumento;
+       printf("Cargo: Servente\n");
+   }
+   else if(numero == 2){
+       aumento = salario * 0.35;
+       novo_salario = salario + aumento;
+       printf("Cargo: Pedreiro\n");
+   }
+   else if(numero == 3){
+       aumento = salario * 0.20;
+       novo_salario = salario + aumento;
+       printf("Cargo: Mestre de Obras\n");
+   }
+   else if(numero == 4){
+       aumento = salario * 0.10;
+       novo_salario = salario + aumento;
+       printf("Cargo: Técnico de Segurança\n");
+   }
+   else{
+       printf("O número informado não corresponde a nenhuma das profissões listadas acima");
+   }
+   
+   printf("Aumento: %.2f\n", aumento);
+   printf("Novo salário: %.2f\n", novo_salario);
+   
+   return 0;
+}
+
+
+
+5° questão:
+#include <stdio.h>
+
+int main() {
+    int cod_estado, cod_carga;
+    float peso_kg, preco_kg, preco_carga, valor_imposto, percentual_imposto, valor_total;
+    
+    printf("Informe o código de estado (1 a 4): ");
+    scanf("%d", &cod_estado);
+    
+    printf("Informe o peso da carga em quilos: ");
+    scanf("%f", &peso_kg);
+    
+    printf("Informe o código da carga (10 a 40): ");
+    scanf("%d", &cod_carga);
+    
+    if (cod_estado == 1) {
+        percentual_imposto = 0.20; 
+    } else if (cod_estado == 2) {
+        percentual_imposto = 0.15; 
+    } else if (cod_estado == 3) {
+        percentual_imposto = 0.10; 
+    } else if (cod_estado == 4) {
+        percentual_imposto = 0.05; 
+    } else {
+        printf("O código de estado é inválido\n");
+        return 1; 
+    }
+    
+    if (cod_carga >= 10 && cod_carga <= 20) {
+        preco_kg = 180;
+    } 
+    else if (cod_carga >= 21 && cod_carga <= 30) {
+        preco_kg = 120;
+    } 
+    else if (cod_carga >= 31 && cod_carga <= 40) {
+        preco_kg = 230;
+    } 
+    else {
+        printf("O código de carga é inválido\n");
+        return 1; 
+    }
+
+    preco_carga = peso_kg * preco_kg;
+    
+    valor_imposto = preco_carga * percentual_imposto;
+    
+    valor_total = preco_carga + valor_imposto;
+    
+    printf("Peso da carga em quilos: %.2f kg\n", peso_kg);
+    printf("Preço da carga: R$ %.2f\n", preco_carga);
+    printf("Valor do imposto: R$ %.2f\n", valor_imposto);
+    printf("Valor total da carga: R$ %.2f\n", valor_total);
+    
+    return 0;
+}
+
+
+
+6° questão: 
+#include <stdio.h>
+
+int main() {
+    int numero;
+    printf("Informe um número inteiro: ");
+    scanf("%d", &numero);
+    
+    if(numero % 5 == 0){
+        printf("O número %d é divisível por 5", numero);
+    }
+    else{
+        printf("O número %d não é divisível por 5", numero);
+    }
+    
+    return 0;
+}
+
+
+
+7° questão:
+#include <stdio.h>
+
+int main() {
+    char nome[50];
+    int idade, mensalidade;
+    printf("Informe o seu nome: ");
+    scanf("%s", &nome);
+    printf("Informe a sua idade: ");
+    scanf("%d", &idade);
+    
+    if(idade >= 18){
+        mensalidade = 50;
+    }
+    else if(idade > 18 && idade <= 29){
+        mensalidade = 70;
+    }
+    else if(idade > 29 && idade <= 45){
+        mensalidade = 90;
+    }
+    else if(idade > 45 && idade <= 65){
+        mensalidade = 130;
+    }
+    else{
+        mensalidade = 170;
+    }
+    
+    printf("Nome: %s\n", nome);
+    printf("Idade: %d anos\n", idade);
+    printf("Mensalidade: %d reais\n", mensalidade);
+    
+    return 0;
+}
+
+
+
+8° questão:
+#include <stdio.h>
+
+int main() {
+    int idade;
+    printf("Informe a sua idade:");
+    scanf("%d", &idade);
+    
+    if(idade < 16){
+        printf("Não eleitor");
+    }
+    else if(idade >=18 && idade < 65){
+        printf("Eleitor obrigatório");
+    }
+    else{
+        printf("Eleitor facultativo");
+    }
+    
+    return 0;
+}
+
+
+
+9° questão:
+#include <stdio.h>
+
+int main() {
+    float altura, peso_ideal;
+    char sexo;
+    printf("Informe a sua altura (em metros): ");
+    scanf("%f", &altura);
+    printf("Informe o seu sexo (M ou F): ");
+    scanf(" %c", &sexo);
+    
+    if (sexo == 'M' || sexo == 'm') {
+        peso_ideal = (72.7 * altura) - 58;
+    } 
+    else if (sexo == 'F' || sexo == 'f') {
+        peso_ideal = (62.1 * altura) - 44.7;
+    } 
+    else {
+        printf("Sexo inválido.\n");
+        return 1;
+    }
+    
+     printf("O peso ideal é: %.2f kg\n", peso_ideal);
+     
+    return 0;
+}
+
+
+
+10° questão:
+#include <stdio.h>
+
+int main() {
+    int prato, bebida, cal_prato, cal_bebida, cal_total;
+    printf("Pratos disponíveis no cardápio: \n");
+    printf("Italiano - 1\n");
+    printf("Japonês - 2\n");
+    printf("Salvadoreno - 3\n\n");
+    printf("Bebidas disponíveis no cardápio: \n");
+    printf("Chá - 4\n");
+    printf("Suco de Laranja - 5\n");
+    printf("Refrigerante - 6\n\n");
+    
+    printf("Informe o número correspondente ao prato desejado: ");
+    scanf("%d", &prato);
+    printf("Informe o número correspondente a bebida desejada: ");
+    scanf("%d", &bebida);
+    
+    if(prato == 1){
+        cal_prato = 750;
+    }
+    else if(prato == 2){
+        cal_prato = 342;
+    }
+    else if(prato == 3){
+        cal_prato = 545;
+    }
+    else{
+        printf("Esse prato não está disponível no cardápio\n");
+        return 1;
+    }
+    
+    if(bebida == 4){
+        cal_bebida = 30;
+    }
+    else if(bebida == 5){
+        cal_bebida = 30;
+    }
+    else if(bebida == 6){
+        cal_bebida = 90;
+    }
+    else{ 
+        printf("Essa bebida não está disponível no cardápio\n");
+        return 1;
+    }
+    
+     cal_total = cal_prato + cal_bebida;
+    printf("Suas calorias totais são iguais a: %d\n kcal", cal_total);
+
+    return 0;
+}
