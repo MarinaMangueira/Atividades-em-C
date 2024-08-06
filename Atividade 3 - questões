@@ -1,0 +1,79 @@
+1.Construa um programa que leia o número de termos da série e imprima o valor de S.
+(foto insisponível)
+
+
+
+2. Elabore um programa que receba um número e imprima a tabuada da multiplicação deste
+numero de 1 ao 10.
+
+
+
+3. Faça um programa que apresenta a soma de todos os números inteiros ímpares entre 200 e
+500.
+
+
+
+4. Construa um programa que apresente todos os números divisíveis por 3 e por 7
+(simultaneamente) que sejam menores que 30.
+
+
+
+5. Elabore um programa que leia uma frase e o número de vezes que deseja imprimi-la.
+
+
+
+6. Faça um programa que leia um conjunto de pedidos e calcule o total da compra. O pedido
+possui os seguintes campos: número, data (dia, mês e ano), preço unitário e quantidade. A
+entrada de pedidos é encerrada quando o usuário informa zero como número do pedido.
+
+
+
+7. Elabore um programa que receba a idade, peso, sexo e o estado civil de várias pessoas e
+imprima a quantidade de pessoas casadas, solteiras, separadas e viúvas. Apresenta a média
+de idade e de peso. O algoritmo finaliza quando for informado o valor zero para idade.
+
+
+
+8. Construa um programa que possibilite calcular a área total de uma residência (sala, cozinha,
+banheiro, quartos etc.). O programa deve solicitar a entrada do nome, a largura e o
+comprimento de um determinado cômodo até que o nome do cômodo seja "FIM". O programa
+deve apresentar o valor total acumulado da área residencial.
+
+
+
+9. Faça um programa que leia um número inteiro e calcule o seu fatorial.
+
+
+
+10. Elabore um programa que apresente todos os números divisíveis por 3 que sejam menores
+que 100.
+
+
+
+11. Construa um programa que receba um número inteiro maior que 1 e verifique se ele é
+primo.
+
+
+
+12. A prefeitura está coletando informações sobre o salário e o número de filhos dos
+habitantes. A leitura de dados é realizada até que seja informado o valor -1 para o salário.
+Apresenta a média de salário da população, a média de filhos e o maior salário.
+
+
+
+13. Escreva um programa que receba a idade e altura de várias pessoas, calcule e apresenta a
+média de altura e idade das pessoas. A entrada de dados é encerrada quando for digitado o
+valor 0 para a idade.
+
+
+
+14. Em uma avaliação de um produto o cliente responde sua opinião (1 – satisfatório; 2 –
+indiferente; 3 – insatisfatório). Faça um programa que leia a idade e opinião e apresente: o
+número de clientes que respondeu satisfatório, a média de idade dos clientes que opinaram
+como satisfatório e o número de quem respondeu insatisfatório. O programa se encerra quando
+for digitado o valor 0 para idade.
+
+
+
+15. Faça um programa que leia números inteiros até que seja informado o valor 0. Apresente a
+média dos valores, o maior e o menor valor
