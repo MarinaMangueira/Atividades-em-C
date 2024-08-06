@@ -1,0 +1,179 @@
+1° questão: 
+corretos: idade; x2; aluno_nota; A; 
+incorretos: media idade; 2nome; nome*r; 012; media_peso%; endereco+cep; /fone; 1234P;
+
+
+
+2° questão: 
+#include <stdio.h>
+
+int main(){
+    char nome[50];
+    printf("Informe o seu nome: ");
+    scanf("%s", &nome);
+    
+    printf("Bem-vindo(a) a disciplina de Programação I, %s", nome);
+    return 0;
+}
+
+
+
+3° questão:
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+    int numero, quadrado;
+    float raiz;
+    printf("Informe um número inteiro: ");
+    scanf("%d", &numero);
+    
+    quadrado = numero * numero;
+    printf("O quadrado de %d é: %d\n", numero, quadrado);
+    
+    
+    raiz = sqrtf((float)numero);
+    printf("A raiz quadrada de %d é: %2.f\n", numero, raiz);
+    
+    return 0;
+}
+
+
+
+4° questão:
+#include <stdio.h>
+
+int main(){
+    int numero1, numero2, numero3, numero4; 
+    float media;
+    printf("Informe o primeiro número: ");
+    scanf("%d", &numero1);
+    
+    printf("Informe o segundo número: ");
+    scanf("%d", &numero2);
+    
+    printf("Informe o terceiro número: ");
+    scanf("%d", &numero3);
+    
+    printf("Informe o quarto número: ");
+    scanf("%d", &numero4);
+    
+    media = (numero1+numero2+numero3+numero4) /2;
+    printf("A média dos quatro números informados é: %2.f", media);
+    
+   return 0;
+}
+
+
+
+5° questão:
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float raio, area, perimetro;
+    
+    printf("Informe o raio do círculo: ");
+    scanf("%f", &raio);
+    
+     area = M_PI * raio * raio;
+     printf("A área do círculo informado é: %.2f\n", area);
+     
+     perimetro = 2 * M_PI * raio;
+     printf("O perímetro do círculo informado é: %.2f\n", perimetro);
+     
+     return 0;
+}
+
+
+
+6° questão:
+O erro deste código está presente na linha 7, está faltando o "&" no num1.
+A linha correta deveria ficar: 
+	scanf("%d", &num1);
+
+
+
+7° questão:
+#include <stdio.h>
+
+int main() {
+   int numero, antecessor, sucessor;
+   printf("Informe um número inteiro: ");
+   scanf("%d", &numero);
+   
+   antecessor = numero -1;
+   printf("O antecessor de %d é: %d\n", numero, antecessor);
+   
+   sucessor = numero +1;
+   printf("O sucessor de %d é: %d\n", numero, sucessor);
+     
+     return 0;
+}
+
+
+
+8° questão:
+#include <stdio.h>
+
+int main() {
+   float nota1, nota2, nota3, nota4, media;
+   printf("Informe a primeira nota: ");
+   scanf("%f", &nota1);
+   
+   printf("Informe a segunda nota: ");
+   scanf("%f", &nota2);
+   
+   printf("Informe a terceira nota: ");
+   scanf("%f", &nota3);
+   
+   printf("Informe a quarta nota: ");
+   scanf("%f", &nota4);
+   
+   media = (nota1 + nota2 + nota3 + nota4) /4;
+   printf("A média das quatro notas informadas é: %.2f", media);
+   
+     return 0;
+}
+
+
+
+9° questão:
+#include <stdio.h>
+
+int main() {
+   float deposito, juros, rendimento, valor_total;
+   printf("Informe o valor do depositado: ");
+   scanf("%f", &deposito);
+   
+   printf("Informe o valor dos juros em percentual: ");
+   scanf("%f", &juros);
+   
+   rendimento = deposito * (juros /100);
+   printf("O valor do rendimento é: %.2f\n", rendimento);
+   
+   valor_total = deposito + rendimento;
+   printf("O valor total é: %2.f\n", valor_total);
+   
+   return 0;
+}
+
+
+
+10° questão:
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+   float numero1, numero2, resultado;
+   printf("Informe o primeiro número (referente a base): ");
+   scanf("%f", &numero1);
+   
+   printf("Informe o segundo número (referente ao expoente): ");
+   scanf("%f", &numero2);
+   
+   resultado = powf(numero1, numero2);
+   printf("%.2f elevado a %.2f é igual a: %.2f\n", numero1, numero2, resultado);
+   
+   return 0;
+}
