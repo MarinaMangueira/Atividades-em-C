@@ -1,0 +1,61 @@
+1. Marque com um X os identificadores incorretos.
+( ) idade
+( ) media idade
+( ) 2nome
+( ) nome*r
+( ) x2
+( ) 012
+( ) media_peso%
+( ) endereco+cep
+( ) /fone
+( ) aluno_nota
+( ) A
+( ) 1234P
+
+
+
+2. Escreva um programa que leia o nome de uma pessoa e escreva a seguinte mensagem:
+"Bem-vindo à disciplina de Linguagem de Programação I, Fulano".
+
+
+
+3. Escreva um programa que lê um número positivo inteiro e apresente o quadrado e a raiz
+quadrada deste número.
+
+
+
+4. Escreva um programa que receba quatro números inteiros, calcula e apresenta a média
+aritmética entre eles. Observação: não esqueça de formatar o valor da média no momento de
+apresentá-lo, utilize duas casas decimais.
+
+
+
+5. Escreva um programa que dado o raio de um círculo calcule sua área e o perímetro. A área
+é a superfície do objeto, dada por e o perímetro é a medida do contorno do objeto dado por P .
+Dica: utilize as funções intrínsecas vistas na unidade.
+
+
+
+6. Identifique os erros no programa abaixo.
+(foto não disponível)
+
+
+
+7. Escreva um programa que leia um número inteiro e apresente seu antecessor e seu
+sucessor.
+
+
+
+8. Elabore um programa que receba quatro notas e calcule a média aritmética entre elas.
+
+
+
+9. Faça um programa que receba o valor de um depósito e o valor da taxa de juros, calcule e
+apresente o valor do rendimento e o valor total (valor do depósito +valor do rendimento).
+
+
+
+10. Escreva um programa que receba dois números, calcule e apresente um elevado ao outro
+
+
+
