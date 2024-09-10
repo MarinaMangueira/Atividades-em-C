@@ -1,0 +1,29 @@
+1. Faça um programa que leia dois vetores A e B e apresente a diferença entre os elementos.
+
+
+
+2. Escreva um programa que leia um vetor A e o apresente em ordem decrescente.
+
+
+
+3. Elabore um programa que leia uma palavra e se a palavra tiver número ímpar de caracteres,
+ imprima todas as suas consoantes.
+
+
+
+4. Faça um programa que leia uma palavra e o número de vezes que se deseja imprimi-la.
+
+
+
+5. Construa um programa que recebe duas matrizes inteiras de ordem 5 e imprima a soma e a
+ diferença entre elas.
+
+
+
+6. Escreva um programa que leia um vetor com 30 elementos inteiros e escreva-os em ordem
+ contrária a da leitura.
+
+
+
+ 7. Faça um programa que leia dois vetores A e B, com 20 números inteiros. Efetue a soma dos
+ dois vetores em um vetor C e imprima o vetor C em ordem crescente.
